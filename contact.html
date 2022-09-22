@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Project</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+  <!-- nav -->
+    <header class="nav-bar container">
+      <div class="nav-logo"><img src="./assets/logos/circle.svg"></a></div>
+      <nav class="nav-links">
+          <a href="./index.html" class="nav-link hover">Home</a>
+          <a href="#" class="nav-link hover">Projects</a>
+          <a href="#" class="nav-link hover">Services</a>
+      </nav>
+      <div class="nav-button"></div>
+      <div><a href="#" class="button-contact">Contact Us</a></div>
+    </header>
+
+  
+  <div class="form-section container">
+    <div class="contact">
+      <h1 class="contact-title">Contact Us</h1>
+      <form class="web-form" id="web-form">
+
+        <div class="div-form">
+          <label for="email" class="contact-label">Name*</label>
+          <input
+                type="name"
+                class="email-contact"
+                maxlength="256"
+                name="name"
+                data-name="name"
+                placeholder="Enter your full name"
+                id="name"
+                required=""
+              />
+        </div>
+
+        <div class="div-form">
+          <label for="email" class="contact-label">Email*</label>
+          <input
+                type="email"
+                class="email-contact"
+                maxlength="256"
+                name="email"
+                data-name="Email"
+                placeholder="Enter your email"
+                id="email"
+                required=""
+              />
+        </div>
+
+        <div class="div-form">
+          <label for="email" class="contact-label">Phone*</label>
+          <input
+                type="number"
+                class="email-contact"
+                maxlength="256"
+                name="phone"
+                data-name="phone"
+                placeholder="Enter your phone"
+                id="phone"
+                required=""
+              />
+        </div>
+
+        <div class="div-form">
+          <label for="email" class="contact-label">Message*</label>
+          <textarea
+                type="field"
+                class="email-contact"
+                maxlength="300"
+                name="field"
+                data-name="field"
+                placeholder="Write your message here..."
+                id="message"
+                required=""></textarea>
+        </div>
+        <div class="div-form">
+        <input 
+          type="submit" 
+          class="button-contact"
+          value="Submit" 
+          id="button-submit" >
+        </div>
+        
+      </form>
+      <div class="form-done"></div>
+      <div class="form-wrong"></div>
+    </div>
+  </div>
+  <script src="./contact.js"></script>
+  </body>
+
+  <footer>
+    <div class="footer-section container">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div>
+            <img class="footer-logo" src="./assets/logos/circle.svg" alt="">
+          </div>
+          <div class="footer-address">
+            2972 Westheimer Rd. Santa Ana, Illinois 85486
+          </div>
+        </div>
+        <div class="footer-right">
+          <a href="http://www.miquelcardiel.xyz"class="footer-link">Team</a>
+          <a href="http://www.miquelcardiel.xyz"class="footer-link">Services</a>
+          <a href="http://www.miquelcardiel.xyz"class="footer-link">About Us</a>
+          <a href="http://www.miquelcardiel.xyz"class="footer-link">Press</a>
+          <a href="http://www.miquelcardiel.xyz"class="footer-link">Projects</a>
+          <a href="http://www.miquelcardiel.xyz"class="footer-link">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
