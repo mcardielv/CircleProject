@@ -1,5 +1,5 @@
 //detect submit button from dom html
-document.querySelector("#web-form").addEventListener("button-submit", addPost);
+document.querySelector("#web-form").addEventListener("buttonSubmit", addPost);
 
 //get api array
 const url = "http://jsonplaceholder.typicode.com/comments";

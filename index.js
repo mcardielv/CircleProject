@@ -9,25 +9,27 @@ function link() {
   fetch(web)
     .then((item) => item.json())
     .then((item2) => {
-      let infoPosts = "";
+      let fillPosts = "";
       item2.forEach((post) => {
-        infoPosts += `
-            <div class="cards">
+        fillPosts += `
+          <div class="project-card">
                 <div class="project-image">
                 <img src="./assets/projects-section/${
                   post.id
                 }.jpg" alt="" class="prj-img">
                 </div>
             <div class="card-text">
-            <div class="project-title">${post.title.slice(0, 20)}</div>
-            <div class="project-description">${post.body.slice(0, 20)}</div>
-            <div><a href="#" class="project-link">Learn More</a></div>
+              <div class="project-title">${post.title.slice(0, 20)}</div>
+              <div class="project-description">${post.body.slice(0, 20)}</div>
+              <div><a href="#" class="project-link">Learn More</a></div>
+            </div>
           </div>
             `;
       });
-      console.log(infoPosts);
+      console.log(fillPosts);
+      fillPosts = document.querySelector("#cards").innerHTML;
     })
-    .catch();
+    .catch((error) => console.log(error));
 }
 
 link();
