@@ -34,7 +34,7 @@ function addPost(preventForm) {
       let message = "";
       message += `
         <div> Thank you! Your submission has been received </div>`;
-      message = document.querySelector("form-done").innerHTML;
+      message = document.querySelector(".form-done").innerHTML;
       console.log(message);
     })
 
@@ -42,7 +42,7 @@ function addPost(preventForm) {
       let message = "";
       message += `
         <div> Oops! Something went wrong when submitting the form </div>`;
-      message = document.querySelector("form-wrong").innerHTML;
+      message = document.querySelector(".form-wrong").innerHTML = message;
       console.log(message);
     });
   document.querySelector("#name").value = "";
