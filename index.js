@@ -27,7 +27,7 @@ function link() {
             `;
       });
       console.log(fillPosts);
-      fillPosts = document.querySelector("#cards").innerHTML;
+      document.querySelector("#cards").innerHTML = fillPosts;
     })
     .catch((error) => console.log(error));
 }
